@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.nav-bar {
+  height: 80px;
+  background-color: #ffa07a;
+  border: .5px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav-logoo {
+  width: 100px;
+  height: 90px;
+}
+
+.nav-input {
+  height: 30px;
+  width: 260px;
+  margin-top: 17px;
+  overflow: hidden;
+}
+
+.nav-button {
+  height: 30px;
+  margin-top: 17px;
+}
+
+.nav-list-ul {
+  color: #fff;
+  justify-content: space-between;
+  margin: 7px;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-list > ul > li {
+  padding: 15px;
+}
+
+h3 {
+  color: #fff;
+  margin-top: 8px;
+  margin-right: 13rem;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+.card {
+  width: 290px;
+  height: 380px;
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.card-cart {
+  width: 290px;
+  height: 400px;
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.flex-ull {
+  justify-content: center;
+  gap: 10px;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  font-size: larger;
+  list-style-type: none;
+  display: flex;
+}
+
+.flex-ulll {
+  background-color: #ffebcd;
+  padding: 1px;
+}
+
+.flex-cartt {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.card:hover, .card-cart:hover {
+  width: 295px;
+  transition: all .3s;
+}
+
+.card > img, .card-cart > img {
+  width: 100%;
+}
+
+.restaurant-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.cuisines {
+  color: #000;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline;
+}
+
+.min {
+  color: red;
+}
+
+.nav-search {
+  position: absolute;
+  top: 5px;
+  right: 700px;
+}
+
+.center-filtered {
+  size: 50px;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nav-list-ul .button-nav {
+  height: 50px;
+  padding: 4px;
+}
+
+.shimmer-card {
+  width: 290px;
+  height: 350px;
+  background-color: #d3d3d3;
+  margin: 10px;
+  padding: 10px;
+}
+
+.link-re {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  flex-direction: row;
+  gap: 50px;
+  margin: 50px;
+  display: flex;
+}
+
+.menu-ress {
+  box-shadow: #fff;
+  background-color: #fafad2;
+}
+
+.menu-menuu {
+  background-color: #ccc;
+  margin: 10px;
+}
+
+.cart-blk {
+  color: #000;
+  font-size: 25px;
+  position: relative;
+  top: 30px;
+}
+
+.cart-de {
+  text-align: center;
+}
+
+.card-menu > img {
+  width: 100%;
+}
+
+.cart-name {
+  padding: 5px;
+  font-size: large;
+}
+
+.cart-des, .cart-car {
+  padding: 5px;
+}
+
+.cart-price {
+  color: red;
+  padding: 5px;
+  font-size: large;
+}
+
+.cart-rating {
+  padding: 5px;
+}
+
+.card-menu {
+  height: 300px;
+  width: 300px;
+  color: #000;
+  border: 1px solid #000;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 5px;
+  display: flex;
+}
+
+.card-menu-button {
+  position: relative;
+  top: -30px;
+  left: 90px;
+}
+
+.card-menuu {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.clear-cart {
+  height: 30px;
+  background-color: #ffa07a;
+  margin-top: 30px;
+}
+
+.cart-fl {
+  justify-content: space-around;
+  display: flex;
+}
+
+.form-for {
+  text-align: center;
+  margin-top: 80px;
+  padding: 10px;
+}
+
+.for-name {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.logout-message {
+  width: 400px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.logout-message h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.logout-message p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.logout-bt {
+  color: #fff;
+  background-color: #ff5722;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color .2s ease-in-out;
+  display: inline-block;
+}
+
+.logout-bt:hover {
+  background-color: #f44336;
+}
+
+.res-link {
+  text-decoration: none;
+}
+
+.res-name:hover {
+  color: #cd5c5c;
+}
+
+.res-name {
+  color: #000;
+}
+
+.about {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.offline {
+  z-index: 9999;
+  background-color: #fffffff2;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.offline-wrapper {
+  max-width: 600px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  display: flex;
+  box-shadow: 0 5px 20px #0000001a;
+}
+
+.offline-heading {
+  color: #ff5722;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.offline-text {
+  color: #444;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.offline-image {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.loading-spinner {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  animation: 1s ease-in-out infinite pulse;
+}
+
+.spinner:nth-child(2) {
+  animation-delay: .1s;
+}
+
+.spinner:nth-child(3) {
+  animation-delay: .2s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.2);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(.2);
+  }
+}
+
+.border-insta {
+  border: 2px solid #000;
+  margin: 8px;
+  padding: 5px;
+  font-family: Times New Roman, Times, serif;
+}
+
+.on-off {
+  font-size: 12px;
+}
+
+.bawa {
+  margin-top: 30px;
+  margin-left: 130px;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  font-size: 20px;
+  position: absolute;
+}
+
+.bawa-cur {
+  cursor: pointer;
+  padding: 2px;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
