@@ -143,8 +143,8 @@
     }
   }
 })({"1xC6H":[function(require,module,exports) {
-var Refresh = require("eca25b62ec80ae60");
-var ErrorOverlay = require("e5b3f31a7227c91d");
+var Refresh = require("51ebb4c926c90c84");
+var ErrorOverlay = require("ae0fae0a3fe946e5");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -163,7 +163,7 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"eca25b62ec80ae60":"786KC","e5b3f31a7227c91d":"1dldy"}],"2paN5":[function(require,module,exports) {
+},{"51ebb4c926c90c84":"786KC","ae0fae0a3fe946e5":"1dldy"}],"2paN5":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -589,8 +589,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = void 0;
-var _react = require("c2956de10b87da3b");
-var _jsxRuntime = require("fb010bd7781fb3ab");
+var _react = require("7d1015be96495a70");
+var _jsxRuntime = require("9acfa06224ad5edd");
 const Section = ({ title , descrition , Isvisible , setIsvisiable  })=>{
     console.log("isvisible:", Isvisible);
     console.log("setIsvisible:", setIsvisiable);
@@ -668,6 +668,6 @@ $RefreshReg$(_c1, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"c2956de10b87da3b":"21dqq","fb010bd7781fb3ab":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","2paN5"], null, "parcelRequire030e")
+},{"7d1015be96495a70":"21dqq","9acfa06224ad5edd":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","2paN5"], null, "parcelRequire030e")
 
 //# sourceMappingURL=Instamart.0762395e.js.map

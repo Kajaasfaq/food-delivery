@@ -143,8 +143,8 @@
     }
   }
 })({"1xC6H":[function(require,module,exports) {
-var Refresh = require("eca25b62ec80ae60");
-var ErrorOverlay = require("e5b3f31a7227c91d");
+var Refresh = require("51ebb4c926c90c84");
+var ErrorOverlay = require("ae0fae0a3fe946e5");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -163,7 +163,7 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"eca25b62ec80ae60":"786KC","e5b3f31a7227c91d":"1dldy"}],"4ns5B":[function(require,module,exports) {
+},{"51ebb4c926c90c84":"786KC","ae0fae0a3fe946e5":"1dldy"}],"4ns5B":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -589,11 +589,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = void 0;
-var _react = require("204c1d48094aa6f0");
-var _userContext = _interopRequireDefault(require("90ecec7c0ca1dbbd"));
-var _ProfileClass = _interopRequireDefault(require("d248ebbead571213"));
-var _Profile = _interopRequireDefault(require("a1e6cffc61f37133"));
-var _jsxRuntime = require("98f4e69482fe7273");
+var _react = require("8bc363f10046f973");
+var _userContext = _interopRequireDefault(require("ba563d26b3974db4"));
+var _ProfileClass = _interopRequireDefault(require("f5b38a6e52a9cd30"));
+var _Profile = _interopRequireDefault(require("c78a95ce54b55bcb"));
+var _jsxRuntime = require("43a18353b88cfb24");
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
@@ -638,7 +638,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"204c1d48094aa6f0":"21dqq","90ecec7c0ca1dbbd":"eBA1b","d248ebbead571213":"aeEz8","a1e6cffc61f37133":"h0rtF","98f4e69482fe7273":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aeEz8":[function(require,module,exports) {
+},{"8bc363f10046f973":"21dqq","ba563d26b3974db4":"eBA1b","f5b38a6e52a9cd30":"aeEz8","c78a95ce54b55bcb":"h0rtF","43a18353b88cfb24":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aeEz8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1beb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -650,8 +650,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = void 0;
-var _react = _interopRequireDefault(require("5829a3a39c41c3d2"));
-var _jsxRuntime = require("945e3a98d06e9e55");
+var _react = _interopRequireDefault(require("9057774cecb8d27d"));
+var _jsxRuntime = require("14fbc9bc53a50f6d");
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
@@ -700,7 +700,7 @@ exports.default = _default;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"5829a3a39c41c3d2":"21dqq","945e3a98d06e9e55":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"h0rtF":[function(require,module,exports) {
+},{"9057774cecb8d27d":"21dqq","14fbc9bc53a50f6d":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"h0rtF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b52a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -712,8 +712,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = void 0;
-var _react = require("66b5e5ad18e87b4d");
-var _jsxRuntime = require("c3d0fb1d4ff72aa4");
+var _react = require("a529b128d5795737");
+var _jsxRuntime = require("d33be6af2fd89aaa");
 const Profile = (props)=>{
     const [count, setcount] = (0, _react.useState)(0);
     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
@@ -747,6 +747,6 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"66b5e5ad18e87b4d":"21dqq","c3d0fb1d4ff72aa4":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","4ns5B"], null, "parcelRequire030e")
+},{"a529b128d5795737":"21dqq","d33be6af2fd89aaa":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","4ns5B"], null, "parcelRequire030e")
 
 //# sourceMappingURL=About.84db8bad.js.map

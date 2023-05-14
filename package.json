@@ -2,7 +2,7 @@
   "name": "ass-3",
   "version": "1.0.0",
   "description": "react assignment 3",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "jest",
     "watch-test": "jest --watch",
