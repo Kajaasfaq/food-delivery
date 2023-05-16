@@ -15,7 +15,7 @@ const CardMenu = () => {
   return (cartMenu.length === 0) ? (<Shimmer />) : (
     <>
       {cartMenu?.map((item, index) => (
-        <div className=" overflow-scroll" key={item.id} >
+        <div className="" key={item.id} >
           <div className="border-2 border-transparent bg-white  w-[300px] h-[580px] p-3">
           <img className="w-[100%]" src={IMG_CDN_URL_CART + item.card.info?.imageId} />
           <h5 className="mt-2 text-xl">{item.card.info?.name}</h5>
