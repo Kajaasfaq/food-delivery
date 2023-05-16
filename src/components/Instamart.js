@@ -5,9 +5,9 @@ const Section = ({title , descrition , Isvisible , setIsvisiable }) => {
             console.log('setIsvisible:', setIsvisiable) 
     return (
 
-        <div className="border-insta">
-          <h1>{title}</h1>
-          {Isvisible ? (<div><button onClick={() => {setIsvisiable(!Isvisible)}}>Hide</button><p>{descrition}</p></div>) : <button onClick={() =>{setIsvisiable(true)}}>Show</button> } 
+        <div className="p-5 text-center">
+          <h1 className=" text-xl text-black text-center p-4 bg-white">{title}</h1>
+          {Isvisible ? (<div className="text-xl text-black text-center"><button className="cursor-pointer hover:text-slate-600 hover:underline" onClick={() => {setIsvisiable(!Isvisible)}}>Hide</button><p>{descrition}</p></div>) : <button className="cursor-pointer hover:text-slate-600 hover:underline" onClick={() =>{setIsvisiable(true)}}>Show</button> } 
         </div>
     )
 }
@@ -18,12 +18,14 @@ const Instamart = () => {
     const [isShow ,setIsshow] = useState("about")
     return (
        <>
-        <h1>Instamart</h1>
-        <div >
-        < Section title = {"About Instamart"} Isvisible={isShow === "about"}  setIsvisiable={() => setIsshow("about")}     descrition={"Even though React only updates the changed DOM nodes, re-rendering still takes some time. In many cases its not a problem, but if the slowdown is noticeable, you can speed all of this up by overriding the lifecycle function shouldComponentUpdate, which is triggered before the re-rendering process starts. The default implementation of this function returns true, leaving React to perform the update:"}  />,
-        < Section title = {"Team Instamart"}  Isvisible={isShow === "team"}   setIsvisiable={() => setIsshow("team")}    descrition={"Even though React only updates the changed DOM nodes, re-rendering still takes some time. In many cases its not a problem, but if the slowdown is noticeable, you can speed all of this up by overriding the lifecycle function shouldComponentUpdate, which is triggered before the re-rendering process starts. The default implementation of this function returns true, leaving React to perform the update:"} />,
-        < Section title = {"Details Instamart"} Isvisible={isShow === "details"} setIsvisiable={() => setIsshow("details")}     descrition={"Even though React only updates the changed DOM nodes, re-rendering still takes some time. In many cases its not a problem, but if the slowdown is noticeable, you can speed all of this up by overriding the lifecycle function shouldComponentUpdate, which is triggered before the re-rendering process starts. The default implementation of this function returns true, leaving React to perform the update:"}/>
+       <div className="bg-body-colour w-[100%] h-[780px] flex flex-col items-center">
+       <h1 className="text-2xl text-black text-center p-12">Instamart</h1>
+        <div className="text-xl w-[700] text-center " >
+        < Section  title = {"About Instamart"} Isvisible={isShow === "about"}  setIsvisiable={() => setIsshow("about")}     descrition={"Instamart is an online grocery delivery platform that allows users to order groceries and household essentials from local stores and have them delivered to their doorstep"}  />
+        < Section title = {"Team Instamart"}  Isvisible={isShow === "team"}   setIsvisiable={() => setIsshow("team")}    descrition={"Project Manager, Software Development Manager, UX/UI Designer, Front-end Developer, Back-end Developer, QA Analyst"} />
+        < Section title = {"Details Instamart"} Isvisible={isShow === "details"} setIsvisiable={() => setIsshow("details")}     descrition={"Users can place orders through the Instamart mobile app or website, and can choose from a variety of payment options, including cash on delivery, bank transfer, and credit card, In addition to its grocery delivery services, Instamart has also launched Instacart Go, a service that allows users to order and pay for items from convenience stores and have them delivered within 30 minutes."}/>
         </div>
+       </div>
       </>
     );
 }

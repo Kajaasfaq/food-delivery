@@ -1,10 +1,11 @@
 // Render Prop
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Link } from 'react-router-dom';
 
 const Login = () => (
-  <div>
-    <h1 className='for-name'>hEy! heartly welcome to  Bawa Food express</h1>
+  <div className='bg-body-colour w-[100%] h-[780px] '>
+    <h1 className='text-2xl text-black text-center p-12'>Heartily welcome to Food Express!</h1>
     <Formik
       initialValues={{ email: '', password: '' }}
       validate={values => {
@@ -26,16 +27,15 @@ const Login = () => (
       }}
     >
       {({ isSubmitting }) => (
-        <Form className='form-for'>
-          <label for="email">Email Id:</label>
+        <Form className='flex items-center gap-5 justify-center'>
+          <label for="email" className=''>Email Id:</label>
           <Field type="email" name="email" />
           <ErrorMessage name="email" component="div" />
           <label for="password"> Password:</label>
           <Field type="password" name="password" />
           <ErrorMessage name="password" component="div" />
-          <button type="submit" disabled={isSubmitting}>
-            Submit
-          </button>
+          <button type="submit" disabled={isSubmitting} className='cursor-pointer hover:text-slate-600 hover:underline border-2 bg-white'>Submit</button>
+          <Link to="/"><button className='cursor-pointer hover:text-slate-600 hover:underline border-2 bg-white'>Back to Home</button></Link>
         </Form>
       )}
     </Formik>

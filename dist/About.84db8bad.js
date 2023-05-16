@@ -603,23 +603,28 @@ const About = ()=>{
     const { user  } = (0, _react.useContext)(_userContext.default);
     return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
         children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("section", {
-            className: "about",
+            className: "bg-body-colour w-[100%] h-[780px]",
             children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                className: "container",
+                className: "flex items-center flex-col gap-5",
                 children: [
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
+                        className: "text-2xl text-black text-center p-12",
                         children: "About Us"
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                        className: "text-xl w-[700] text-center",
                         children: "Bawa Food Delivery is a premium food delivery service that specializes in bringing you the best quality food right to your doorstep. Our mission is to make sure that you have access to the best and most delicious food from top restaurants in your city. "
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                        className: "text-xl w-[700] text-center",
                         children: "We have partnered with hundreds of restaurants in various cities across the country to provide you with a wide variety of cuisines and dishes to choose from. From Italian to Indian, Chinese to Mexican, we have it all!"
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                        className: "text-xl w-[700] text-center",
                         children: "Our team of experienced chefs and delivery executives work together to ensure that your food is prepared with the utmost care and delivered to you on time. We use only the best ingredients and cooking techniques to provide you with a truly unforgettable dining experience."
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                        className: "text-xl w-[700] text-center",
                         children: "At Bawa Food Delivery, we value our customers and strive to exceed their expectations with every order. Our goal is to make food delivery as easy, convenient, and enjoyable as possible for you. So sit back, relax, and let us bring you the best food in town!"
                     })
                 ]

@@ -1,11 +1,10 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 
 
-
-*{
+/* *{
     margin: 0;
     box-sizing: border-box;
 }
@@ -291,7 +290,7 @@ h3{
 
   .about {
     background-color: #f5f5f5; /* Change this value to adjust the background color */
-    padding: 50px 0;
+    /* padding: 50px 0;
   }
   
   .container {
@@ -301,16 +300,16 @@ h3{
   }
   
   .container h2 {
-    font-size: 36px; /* Change this value to adjust the font size */
+    font-size: 36px; 
     font-weight: bold;
-    color: #333; /* Change this value to adjust the color */
+    color: #333;
     margin-bottom: 30px;
   }
   
   .container p {
-    font-size: 18px; /* Change this value to adjust the font size */
+    font-size: 18px;  
     line-height: 1.5;
-    color: #666; /* Change this value to adjust the color */
+    color: #666; 
     margin-bottom: 20px;
   }
   
@@ -423,4 +422,4 @@ h3{
   .bawa-cur{
     cursor: pointer;
     padding: 2px;
-  }
+  } */

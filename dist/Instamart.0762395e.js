@@ -595,14 +595,17 @@ const Section = ({ title , descrition , Isvisible , setIsvisiable  })=>{
     console.log("isvisible:", Isvisible);
     console.log("setIsvisible:", setIsvisiable);
     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-        className: "border-insta",
+        className: "p-5 text-center",
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                className: " text-xl text-black text-center p-4 bg-white",
                 children: title
             }),
             Isvisible ? /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                className: "text-xl text-black text-center",
                 children: [
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                        className: "cursor-pointer hover:text-slate-600 hover:underline",
                         onClick: ()=>{
                             setIsvisiable(!Isvisible);
                         },
@@ -613,6 +616,7 @@ const Section = ({ title , descrition , Isvisible , setIsvisiable  })=>{
                     })
                 ]
             }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                className: "cursor-pointer hover:text-slate-600 hover:underline",
                 onClick: ()=>{
                     setIsvisiable(true);
                 },
@@ -624,36 +628,39 @@ const Section = ({ title , descrition , Isvisible , setIsvisiable  })=>{
 _c = Section;
 const Instamart = ()=>{
     const [isShow, setIsshow] = (0, _react.useState)("about");
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
-        children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
-                children: "Instamart"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
-                        title: "About Instamart",
-                        Isvisible: isShow === "about",
-                        setIsvisiable: ()=>setIsshow("about"),
-                        descrition: "Even though React only updates the changed DOM nodes, re-rendering still takes some time. In many cases its not a problem, but if the slowdown is noticeable, you can speed all of this up by overriding the lifecycle function shouldComponentUpdate, which is triggered before the re-rendering process starts. The default implementation of this function returns true, leaving React to perform the update:"
-                    }),
-                    ",",
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
-                        title: "Team Instamart",
-                        Isvisible: isShow === "team",
-                        setIsvisiable: ()=>setIsshow("team"),
-                        descrition: "Even though React only updates the changed DOM nodes, re-rendering still takes some time. In many cases its not a problem, but if the slowdown is noticeable, you can speed all of this up by overriding the lifecycle function shouldComponentUpdate, which is triggered before the re-rendering process starts. The default implementation of this function returns true, leaving React to perform the update:"
-                    }),
-                    ",",
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
-                        title: "Details Instamart",
-                        Isvisible: isShow === "details",
-                        setIsvisiable: ()=>setIsshow("details"),
-                        descrition: "Even though React only updates the changed DOM nodes, re-rendering still takes some time. In many cases its not a problem, but if the slowdown is noticeable, you can speed all of this up by overriding the lifecycle function shouldComponentUpdate, which is triggered before the re-rendering process starts. The default implementation of this function returns true, leaving React to perform the update:"
-                    })
-                ]
-            })
-        ]
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+            className: "bg-body-colour w-[100%] h-[780px] flex flex-col items-center",
+            children: [
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                    className: "text-2xl text-black text-center p-12",
+                    children: "Instamart"
+                }),
+                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                    className: "text-xl w-[700] text-center ",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
+                            title: "About Instamart",
+                            Isvisible: isShow === "about",
+                            setIsvisiable: ()=>setIsshow("about"),
+                            descrition: "Instamart is an online grocery delivery platform that allows users to order groceries and household essentials from local stores and have them delivered to their doorstep"
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
+                            title: "Team Instamart",
+                            Isvisible: isShow === "team",
+                            setIsvisiable: ()=>setIsshow("team"),
+                            descrition: "Project Manager, Software Development Manager, UX/UI Designer, Front-end Developer, Back-end Developer, QA Analyst"
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
+                            title: "Details Instamart",
+                            Isvisible: isShow === "details",
+                            setIsvisiable: ()=>setIsshow("details"),
+                            descrition: "Users can place orders through the Instamart mobile app or website, and can choose from a variety of payment options, including cash on delivery, bank transfer, and credit card, In addition to its grocery delivery services, Instamart has also launched Instacart Go, a service that allows users to order and pay for items from convenience stores and have them delivered within 30 minutes."
+                        })
+                    ]
+                })
+            ]
+        })
     });
 };
 _c1 = Instamart;

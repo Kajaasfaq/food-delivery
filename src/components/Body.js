@@ -44,14 +44,14 @@ const isOnline = useOnline()
 
     return (allrestaurants?.length === 0) ? (<Shimmer/>) : (
       <>
-      <div className="nav-search">
-        <input  data-testid="btn-inputs" className="nav-input" type='text' placeholder='Search for Reataurant and Dish' value={searchTxt} onChange={(e) => {setSearchTxt(e.target.value)}}></input>
-        <button data-testid="btn-tests" className="nav-button" onClick = {() => {
+      <div className="absolute top-7 left-[580px] flex gap-5">
+        <input  data-testid="btn-inpu" className="w-60 placeholder:text-center" type='text' placeholder='Search for Reataurant and Dish' value={searchTxt} onChange={(e) => {setSearchTxt(e.target.value)}}></input>
+        <button data-testid="btn-tests" className="hover:text-slate-300 hover:underline" onClick = {() => {
          const data = filterData(searchTxt,allrestaurants);
          setFilteredRestaurants(data);
          }}> Search</button>
     </div>
-     <div className="restaurant-list" data-testid="res-list">
+     <div className="bg-body-colour flex flex-wrap gap-7 p-10 justify-center " data-testid="res-list">
        {filteredRestaurants.map((restaurant) => {
         return (<Link to={"/menu/" + restaurant.data.id} key={restaurant.data.id} className="res-link" > <RestrauntCard {...restaurant.data} /></Link>); 
         })}
