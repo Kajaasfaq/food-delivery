@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { IMG_CDN_URL } from "../contant";
-import Shimmer from "./Shimmer";
 import useRestaurant from "../utils/useRestaurant";
 import { addItem, removeItem } from "../utils/cartSlice";
 import { useDispatch } from "react-redux";
+import ShimmerMenu from "./shimmerMenu";
 
 const Menu = () => {
   const { resId } = useParams(); //reading url id
