@@ -4,10 +4,8 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/Helper";
 import { FETCH_ALL_RESTAURANTS } from "../contant";
-import useOnline from "../utils/useOnline";
 
 const Search = () => {
-  const [allrestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants , setFilteredRestaurants] = useState([])
   const [seeRestaurants , setSeeRestaurants] = useState([])
   const [searchTxt, setSearchTxt] = useState('')
@@ -20,29 +18,9 @@ const Search = () => {
  async function getRestaurants() {
    const data = await fetch( FETCH_ALL_RESTAURANTS );
    const  json = await data.json();
-  setAllRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   setSeeRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   setFilteredRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
-
-const isOnline = useOnline()
-
-  if(!isOnline){
-    return(
-  <>
-      <div className="offline">
-       <div className="container">
-        <div className="offline-wrapper">
-         <h2 className="offline-heading">Uh oh!</h2>
-         <p className="offline-text">It looks like you're offline. Please check your internet connection and try again.</p>
-       </div>
-     </div>
-  </div>
-  </>
-    )}  
-
-
-    if(!allrestaurants?.length === 0) return null;
 
     return (allrestaurants?.length === 0) ? (<Shimmer/>) : (
       <>
@@ -50,7 +28,7 @@ const isOnline = useOnline()
       <form className="flex gap-5" onClick = {(e) => {e.preventDefault()}}>
         <input  data-testid="btn-inpu" className="w-60 px-2 placeholder:text-center" type='text' placeholder='Search for Reataurant and Dish' value={searchTxt} onChange={(e) => {setSearchTxt(e.target.value)}}></input>
         <Link to="/sear"><button data-testid="btn-tests" className="hover:text-slate-300 hover:underline" onClick = {() => {
-         const data = filterData(searchTxt,allrestaurants);
+         const data = filterData(searchTxt,seeRestaurants);
          setSeeRestaurants(data);
          }}> Search</button></Link>
           </form> 
