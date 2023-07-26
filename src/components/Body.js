@@ -22,7 +22,7 @@ const BodySection = () => {
   setAllRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   setFilteredRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
-
+  console.log(filteredRestaurants)
 const isOnline = useOnline()
 
   if(!isOnline){
@@ -54,7 +54,8 @@ const isOnline = useOnline()
           </form> 
     </div>
      <div className="bg-body-colour flex flex-wrap gap-7 p-10 justify-center " data-testid="res-list">
-       {filteredRestaurants.map((restaurant) => {
+       { 
+         filteredRestaurants.map((restaurant) => {
         return (<Link to={"/menu/" + restaurant?.info?.id} key={restaurant.info?.id} className="res-link" > <RestrauntCard {...restaurant?.info} /></Link>); 
         })};
      </div>
