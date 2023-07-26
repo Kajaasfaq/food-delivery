@@ -18,7 +18,6 @@ const Search = () => {
  async function getRestaurants() {
    const data = await fetch( FETCH_ALL_RESTAURANTS );
    const  json = await data.json();
-  setSeeRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   setFilteredRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
 
@@ -28,7 +27,7 @@ const Search = () => {
       <form className="flex gap-5" onClick = {(e) => {e.preventDefault()}}>
         <input  data-testid="btn-inpu" className="w-60 px-2 placeholder:text-center" type='text' placeholder='Search for Reataurant and Dish' value={searchTxt} onChange={(e) => {setSearchTxt(e.target.value)}}></input>
         <Link to="/sear"><button data-testid="btn-tests" className="hover:text-slate-300 hover:underline" onClick = {() => {
-         const data = filterData(searchTxt,seeRestaurants);
+         const data = filterData(searchTxt,setFilteredRestaurants);
          setSeeRestaurants(data);
          }}> Search</button></Link>
           </form> 
