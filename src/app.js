@@ -54,7 +54,7 @@ const appRouter = createBrowserRouter([
           element: <BodySection />
         },
         {
-          path: "/search",
+          path: "/sear",
           element: <BodySection />
         },
         {
