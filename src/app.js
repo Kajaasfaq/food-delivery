@@ -15,7 +15,7 @@ import userContext from './utils/userContext';
 import { Provider } from 'react-redux';
 import store from './utils/store';
 import Cart from './components/Cart';
-import Search from './components/search';
+// import Search from './components/search';
 
 
 const Instamart = lazy(() => import("./components/Instamart"));
@@ -55,10 +55,10 @@ const appRouter = createBrowserRouter([
           path: "/",
           element: <BodySection />
         },
-        {
-          path: "/sear",
-          element: <Search />
-        },
+        // {
+        //   path: "/sear",
+        //   element: <Search />
+        // },
         {
           path: "/about",
           element:  <Suspense fallback={<Loadingspin/>}>
