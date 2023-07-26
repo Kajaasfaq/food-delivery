@@ -54,6 +54,10 @@ const appRouter = createBrowserRouter([
           element: <BodySection />
         },
         {
+          path: "/search",
+          element: <BodySection />
+        },
+        {
           path: "/about",
           element:  <Suspense fallback={<Loadingspin/>}>
                        <About/>
