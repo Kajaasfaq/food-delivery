@@ -53,7 +53,7 @@ const isOnline = useOnline()
     </div>
      <div className="bg-body-colour flex flex-wrap gap-7 p-10 justify-center " data-testid="res-list">
        {filteredRestaurants.map((restaurant) => {
-        return (<Link to={"/menu/" + restaurant?.data?.info?.id} key={restaurant.data?.info?.id} className="res-link" > <RestrauntCard {...restaurant?.data?.info} /></Link>); 
+        return (<Link to={"/menu/" + restaurant?.info?.id} key={restaurant.info?.id} className="res-link" > <RestrauntCard {...restaurant?.info} /></Link>); 
         })}
      </div>
       </>
