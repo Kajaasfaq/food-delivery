@@ -15,7 +15,7 @@ const RestrauntCard = ({
         }
       />
       <h2 className='mt-2 text-xl'>{name}</h2>
-      <h3 className="mt-4">{cuisines[0]}</h3>
+      <h3 className="mt-4">{cuisines}</h3>
       <h4 className='mt-4 text-orange-700'>{lastMileTravelString} distance</h4>
     </div>
   );
