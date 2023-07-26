@@ -4,7 +4,8 @@ const RestrauntCard = ({
   name,
   cuisines,
   cloudinaryImageId,
-  lastMileTravelString,
+  sla,
+  avgRating
 }) => {
   return (
     <div className="border-2 border-transparent bg-white mt-5  w-[300px] h-[450px] p-3 hover:transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-105 duration-300">
