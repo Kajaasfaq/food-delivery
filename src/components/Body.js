@@ -3,7 +3,7 @@ import { useState , useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/Helper";
-import { FETCH_ALL_RESTAURANTS } from "../contant";
+import { FETCH_ALL_RESTAURANTS2 } from "../contant";
 import useOnline from "../utils/useOnline";
 
 const BodySection = () => {
