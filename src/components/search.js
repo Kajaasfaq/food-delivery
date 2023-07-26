@@ -9,6 +9,7 @@ import useOnline from "../utils/useOnline";
 const Search = () => {
   const [allrestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants , setFilteredRestaurants] = useState([])
+  const [seeRestaurants , setSeeRestaurants] = useState([])
   const [searchTxt, setSearchTxt] = useState('')
   
   
@@ -49,12 +50,12 @@ const isOnline = useOnline()
         <input  data-testid="btn-inpu" className="w-60 px-2 placeholder:text-center" type='text' placeholder='Search for Reataurant and Dish' value={searchTxt} onChange={(e) => {setSearchTxt(e.target.value)}}></input>
         <Link to="/sear"><button data-testid="btn-tests" className="hover:text-slate-300 hover:underline" onClick = {() => {
          const data = filterData(searchTxt,allrestaurants);
-         // setFilteredRestaurants(data);
+         setSeeRestaurants(data);
          }}> Search</button></Link>
           </form> 
     </div>
      <div className="bg-body-colour flex flex-wrap gap-7 p-10 justify-center " data-testid="res-list">
-       {data.map((restaurant) => {
+       {seeRestaurants.map((restaurant) => {
         return (<Link to={"/menu/" + restaurant?.info?.id} key={restaurant.info?.id} className="res-link" > <RestrauntCard {...restaurant?.info} /></Link>); 
         })}
      </div>
