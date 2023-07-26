@@ -50,7 +50,8 @@ const isOnline = useOnline()
         <Link to="/sear"><button data-testid="btn-tests" className="hover:text-slate-300 hover:underline" onClick = {() => {
          const data = filterData(searchTxt,allrestaurants);
          setFilteredRestaurants(data);
-         }}> Search</button></form> </Link>
+         }}> Search</button></Link>
+          </form> 
     </div>
      <div className="bg-body-colour flex flex-wrap gap-7 p-10 justify-center " data-testid="res-list">
        {filteredRestaurants.map((restaurant) => {
