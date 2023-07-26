@@ -20,7 +20,7 @@ const BodySection = () => {
    const data = await fetch( FETCH_ALL_RESTAURANTS );
    const  json = await data.json();
   setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-  setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+  setFilteredRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
 
 const isOnline = useOnline()
