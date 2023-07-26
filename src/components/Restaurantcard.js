@@ -17,7 +17,7 @@ const RestrauntCard = ({
       />
       <h2 className='mt-2 text-xl'>{name}</h2>
       <h3 className="mt-4">{cuisines.join(", ")}</h3>
-      <h4 className='mt-4 text-orange-700'>{sla?.lastMileTravelString} distance</h4>
+      <h4 className='mt-4 text-orange-700'>{sla} distance</h4>
       <h4 className="mt-4">{avgRating}<h4>
     </div>
   );
