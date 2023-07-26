@@ -57,7 +57,7 @@ const isOnline = useOnline()
        { 
          filteredRestaurants.map((restaurant) => {
         return (<Link to={"/menu/" + restaurant?.info?.id} key={restaurant.info?.id} className="res-link" > <RestrauntCard {...restaurant?.info} /></Link>); 
-        })};
+        })}
      </div>
       </>
      
