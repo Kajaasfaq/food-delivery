@@ -38753,10 +38753,10 @@ const BodySection = ()=>{
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Restaurantcard.default, {
-                                ...restaurant.data
+                                ...restaurant.info
                             })
                         ]
-                    }, restaurant?.info?.id);
+                    }, restaurant.info.id);
                 })
             })
         ]
