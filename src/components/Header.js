@@ -16,7 +16,7 @@ const HeaderSection = () => {
          <div className="">
             <Link to="/"><img data-testid="logo" className="absolute top-0 w-34 h-20 " src={iconDelivery} alt='logo'></img></Link>
         </div>
-        <h5 className=" absolute top-7 left-32"><span className="hover:text-slate-300 hover:underline ">Location</span> : <Tooltip title="Default location"><span className="cursor-pointer" >Bengaluru, Karnataka, India</span></Tooltip> <Tooltip title="Status"><span data-testid="online-status" className="text-xs" >{status}</span></Tooltip></h5>
+        <h5 className=" absolute top-7 left-32"><span className="hover:text-slate-300 hover:underline ">Location</span> : <Tooltip title="Default location"><span className="cursor-pointer" >Anna Nagar, Chennai</span></Tooltip> <Tooltip title="Status"><span data-testid="online-status" className="text-xs" >{status}</span></Tooltip></h5>
         <div className=''>
             <ul className='flex flex-row gap-8 text-lg mt-6 mr-4'>
               <li><Link className="hover:text-slate-300 hover:underline cursor-pointer"to="/">Home</Link></li>

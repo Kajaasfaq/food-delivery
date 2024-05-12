@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { IMG_CDN_URL_CART } from "../contant"
+import { IMG_CDN_URL } from "../contant"
 import { removeCart } from "../utils/cartSlice"
 import Shimmer from "./Shimmer"
 
@@ -16,9 +16,9 @@ const CardMenu = () => {
     <>
       {cartMenu?.map((item, index) => (
         <div className="" key={item.id} >
-          <div className="border-2 border-transparent bg-white  w-[300px] h-[580px] p-3">
-          <img className="w-[100%]" src={IMG_CDN_URL_CART + item.card.info?.imageId} />
-          <h5 className="mt-2 text-xl">{item.card.info?.name}</h5>
+          <div className="border-2 border-transparent bg-white  w-[300px] h-[700px] p-3">
+          <img className="w-[100%]" src={IMG_CDN_URL + item.card.info?.imageId} />
+          <h5 className="mt-2 text-xl font-bold">{item.card.info?.name}</h5>
           <h5 className="mt-3">{item.card.info?.description}</h5>
           <h5 className="mt-3">{item.card.info?.category}</h5>
           <h5 className="mt-3">Rating: {item.card.info?.ratings?.aggregatedRating?.rating}⭐</h5>

@@ -16,12 +16,12 @@ const BodySection = () => {
     getRestaurants();  
    },[])
  
- async function getRestaurants() {
-   const data = await fetch( FETCH_ALL_RESTAURANTS );
-   const  json = await data.json();
-  setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-  setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-  }
+async function getRestaurants() {
+  const data = await fetch(FETCH_ALL_RESTAURANTS);
+  const json = await data.json();
+  setAllRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+}
 
 const isOnline = useOnline()
 
@@ -53,7 +53,7 @@ const isOnline = useOnline()
     </div>
      <div className="bg-body-colour flex flex-wrap gap-7 p-10 justify-center " data-testid="res-list">
        {filteredRestaurants.map((restaurant) => {
-        return (<Link to={"/menu/" + restaurant.data.id} key={restaurant.data.id} className="res-link" > <RestrauntCard {...restaurant.data} /></Link>); 
+        return (<Link to={"/menu/" + restaurant.info.id} key={restaurant.info.id} className="res-link" > <RestrauntCard {...restaurant.info} /></Link>); 
         })}
      </div>
       </>
