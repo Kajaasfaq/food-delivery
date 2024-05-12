@@ -38748,7 +38748,7 @@ const BodySection = ()=>{
                 "data-testid": "res-list",
                 children: filteredRestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_reactRouterDom.Link, {
-                        to: "/menu/" + restaurant.data.id,
+                        to: "/menu/" + restaurant.info.id,
                         className: "res-link",
                         children: [
                             " ",
@@ -38756,7 +38756,7 @@ const BodySection = ()=>{
                                 ...restaurant.data
                             })
                         ]
-                    }, restaurant.data.id);
+                    }, restaurant?.info?.id);
                 })
             })
         ]
