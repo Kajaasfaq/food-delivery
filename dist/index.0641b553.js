@@ -38713,44 +38713,50 @@ const BodySection = ()=>{
     allrestaurants?.length;
     return allrestaurants?.length === 0 ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                className: "absolute top-7 left-[580px] flex gap-5",
-                children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
-                        "data-testid": "btn-inpu",
-                        className: "w-60 placeholder:text-center",
-                        type: "text",
-                        placeholder: "Search for Reataurant and Dish",
-                        value: searchTxt,
-                        onChange: (e)=>{
-                            setSearchTxt(e.target.value);
-                        }
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
-                        "data-testid": "btn-tests",
-                        className: "hover:text-slate-300 hover:underline",
-                        onClick: ()=>{
-                            const data = (0, _Helper.filterData)(searchTxt, allrestaurants);
-                            setFilteredRestaurants(data);
-                        },
-                        children: " Search"
-                    })
-                ]
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: "absolute top-7 left-[580px]",
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("form", {
+                    className: "flex gap-5",
+                    onClick: (e)=>{
+                        e.preventDefault();
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
+                            "data-testid": "btn-inpu",
+                            className: "w-60 px-2 placeholder:text-center",
+                            type: "text",
+                            placeholder: "Search for Reataurant and Dish",
+                            value: searchTxt,
+                            onChange: (e)=>{
+                                setSearchTxt(e.target.value);
+                            }
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                            "data-testid": "btn-tests",
+                            className: "hover:text-slate-300 hover:underline",
+                            onClick: ()=>{
+                                const data = (0, _Helper.filterData)(searchTxt, allrestaurants);
+                                setFilteredRestaurants(data);
+                            },
+                            children: " Search"
+                        })
+                    ]
+                })
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                 className: "bg-body-colour flex flex-wrap gap-7 p-10 justify-center ",
                 "data-testid": "res-list",
                 children: filteredRestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_reactRouterDom.Link, {
-                        to: "/menu/" + restaurant.info.id,
+                        to: "/menu/" + restaurant.data.id,
                         className: "res-link",
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Restaurantcard.default, {
-                                ...restaurant.info
+                                ...restaurant.data
                             })
                         ]
-                    }, restaurant.info.id);
+                    }, restaurant.data.id);
                 })
             })
         ]
