@@ -16,11 +16,11 @@ const BodySection = () => {
     getRestaurants();  
    },[])
  
- async function getRestaurants() {
-   const data = await fetch( FETCH_ALL_RESTAURANTS );
-   const  json = await data.json();
-  setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-  setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+   async function getRestaurants() {
+    const data = await fetch(FETCH_ALL_RESTAURANTS);
+    const json = await data.json();
+    setAllRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
 
 const isOnline = useOnline()
